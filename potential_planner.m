@@ -44,7 +44,6 @@ while step<NSteps
             controlCurrent = control(xPath(:,step), world, potential);
             xPath(:,step+1) = xPath(:,step) - epsilon * controlCurrent;
             if norm(epsilon * controlCurrent)<TOL  % break if stepsize within tolerance
-%                 norm(epsilon * controlCurrent)
                 break;
             end
         case 'momentum'
@@ -52,7 +51,6 @@ while step<NSteps
             if step==1
                 v_last = 0;
             else
-%                 v_last = control(xPath(:,step-1), world, potential);
                 v_last = v_current;
             end
             v_current = gamma * v_last + epsilon * control(xPath(:,step), world, potential);
@@ -65,7 +63,6 @@ while step<NSteps
             if step==1
                 v_last = 0;
             else
-%                 v_last = control(xPath(:,step-1), world, potential);
                 v_last = v_current;
             end
             v_current = gamma * v_last + epsilon * control(xPath(:,step)-gamma*v_last, world, potential);
@@ -96,11 +93,6 @@ while step<NSteps
             error('Optimizer type not recognized')
     end
     
-%     controlCurrent = control(xPath(:,step), world, potential);
-%     if norm(controlCurrent)<TOL  % break if within tolerance
-%         break;
-%     end
-%     xPath(:,step+1) = xPath(:,step) + epsilon * controlCurrent;
     UPath(:,step+1) = U_handle(xPath(:,step+1), world, potential);
     
     step = step+1;

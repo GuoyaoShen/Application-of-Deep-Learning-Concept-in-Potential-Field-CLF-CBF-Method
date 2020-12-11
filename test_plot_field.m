@@ -1,14 +1,14 @@
 clear all;
 close all;
-load('sphereworld3.mat');
+load('sphereworld2.mat');
 % comment out the part when don't use!!!
 
 NGrid_dense = 200;
-grid_dense.xx=linspace(-11,11,NGrid_dense);
+grid_dense.xx=linspace(-16,16,NGrid_dense);
 grid_dense.yy=grid_dense.xx;
 
 NGrid_sparse = 60;
-grid_sparse.xx=linspace(-11,11,NGrid_sparse);
+grid_sparse.xx=linspace(-16,16,NGrid_sparse);
 grid_sparse.yy=grid_sparse.xx;
 
 %% shape "quadratic", Repulseweight "0.1"
