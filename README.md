@@ -26,15 +26,28 @@ Paths for different optimizers. Row 1-4 are resulting paths for optimizers: vani
 
 ### Geometric Combining CBFs using ReLU
 
-Map 1 indexes (see "sphereworld1.mat")
+Paths for geometric combining CBFs using ReLU
+
+Paths for maps, first row are paths with vanilla CLF-CBF for map 1-3; second row are paths with geometric combining CBFs for map 1-3. Paths chosen by vanilla CLF-CBF control are safer and smoother than the geometric combining CBFs method, while in geometric mean method, obstacles are combined and treated as a whole unit, thus the resulting paths may move along the boundaries of some obstacles.
+
+![](https://github.com/GuoyaoShen/Application-of-Deep-Learning-Concept-in-Potential-Field-CLF-CBF-Method/blob/main/figs/combining_cbfs.png)
+
+
+Map 1 indexes (see "sphereworld1.mat").
 
 ![](https://github.com/GuoyaoShen/Application-of-Deep-Learning-Concept-in-Potential-Field-CLF-CBF-Method/blob/main/figs/map1_idx.png)
 
-Weighted Geometric Combining CBFs paths for map 1. The weights w=[w1;w2;w3] used for the map from left to right are: [3;3;3], [3;2;3], [3;1;3]. Smaller weight pushes the path away from the corresponding obstacle (in our case, it's the one on the up-left, centered at [0;3])
+
+
+
+Weighted Geometric Combining CBFs' paths for map 1. The weights w=[w1;w2;w3] used for the map from left to right are: [3;3;3], [3;2;3], [3;1;3]. Smaller weight pushes the path away from the corresponding obstacle (in our case, it's the one on the up-left, centered at [0;3]).
 
 ![](https://github.com/GuoyaoShen/Application-of-Deep-Learning-Concept-in-Potential-Field-CLF-CBF-Method/blob/main/figs/map1_weighted_clfcbf.png)
 
-Silk parameter's path correction
+
+
+
+Silk parameter's path correction.
 
 ![](https://github.com/GuoyaoShen/Application-of-Deep-Learning-Concept-in-Potential-Field-CLF-CBF-Method/blob/main/figs/weighted_clfcbf_correction.png)
 
