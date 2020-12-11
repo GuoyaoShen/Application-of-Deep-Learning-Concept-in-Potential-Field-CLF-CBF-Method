@@ -17,17 +17,24 @@ In this paper, we demonstrate the applications of multiple well-known optimizers
 
 
 ## Some result figures
+
 ### Paths for Optimizers
+
 Paths for different optimizers. Row 1-4 are resulting paths for optimizers: vanilla gradient descent; gradient descent with momentum (heavy ball method); NAG; Adam. In each row, from left to right are map 1, 2 and 3.
+
 ![](https://github.com/GuoyaoShen/Application-of-Deep-Learning-Concept-in-Potential-Field-CLF-CBF-Method/blob/main/figs/paths%20for%20optimizers.png)
 
 ### Geometric Combining CBFs using ReLU
+
 Map 1 indexes (see "sphereworld1.mat")
+
 ![](https://github.com/GuoyaoShen/Application-of-Deep-Learning-Concept-in-Potential-Field-CLF-CBF-Method/blob/main/figs/map1_idx.png)
 
 Weighted Geometric Combining CBFs paths for map 1. The weights w=[w1;w2;w3] used for the map from left to right are: [3;3;3], [3;2;3], [3;1;3]. Smaller weight pushes the path away from the corresponding obstacle (in our case, it's the one on the up-left, centered at [0;3])
+
 ![](https://github.com/GuoyaoShen/Application-of-Deep-Learning-Concept-in-Potential-Field-CLF-CBF-Method/blob/main/figs/map1_weighted_clfcbf.png)
 
 Silk parameter's path correction
+
 ![](https://github.com/GuoyaoShen/Application-of-Deep-Learning-Concept-in-Potential-Field-CLF-CBF-Method/blob/main/figs/weighted_clfcbf_correction.png)
 
