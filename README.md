@@ -26,7 +26,7 @@ Paths for different optimizers. Row 1-4 are resulting paths for optimizers: vani
 
 ### Geometric Combining CBFs using ReLU
 
-Paths for geometric combining CBFs using ReLU
+Paths for geometric combining CBFs using ReLU.
 
 Paths for maps, first row are paths with vanilla CLF-CBF for map 1-3; second row are paths with geometric combining CBFs for map 1-3. Paths chosen by vanilla CLF-CBF control are safer and smoother than the geometric combining CBFs method, while in geometric mean method, obstacles are combined and treated as a whole unit, thus the resulting paths may move along the boundaries of some obstacles.
 
