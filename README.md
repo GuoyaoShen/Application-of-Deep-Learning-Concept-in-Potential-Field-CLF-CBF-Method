@@ -7,7 +7,7 @@ For the report paper for this project, see [here](https://drive.google.com/file/
 * You can further use script "test_optimizer.m" to explore the optimizers. "test_plot_field.m" will give out the potential field and corresponding vector flow field of the maps.
 * Optimizers can be found at "potential_planner.m"; combining CBFs and weighted combining CBFs using the ReLU function can be found at "clfcbf_control.m".
 * You can also create you own map use "sphere_world_creater.m".
-* Folder "code_submission" contains all necessary codes to get the results in the paper shown above, if you want a compact size, just use code inside this folder.
+* Folder "code_submission" contains all necessary codes to get the results in the paper shown above, if you want a compact size, just use the codes inside this folder.
 
 
 ## Abstract
