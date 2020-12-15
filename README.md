@@ -1,5 +1,5 @@
 # Application-of-Deep-Learning-Concept-in-Potential-Field-CLF-CBF-Method
-Some initial thoughs and corresponding work of applying optimizers and activation functions in potential-based path finding task.
+This project shows some initial thoughs and corresponding work of applying optimizers and activation functions in potential-based path planning task.
 
 For the report paper for this project, see [here](https://drive.google.com/file/d/1z-baPbQhgcbU4BF9MTtk8ipE8aZwfPiu/view?usp=sharing).
 
